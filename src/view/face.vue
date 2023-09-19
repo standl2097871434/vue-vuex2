@@ -1,0 +1,205 @@
+<script setup>
+
+</script>
+
+<template>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优佳明训练平台</title>
+    <link rel="stylesheet" href="/src/assets/style.css">
+  </head>
+
+  <div class="box">
+    <div class="content">
+      <div class="login-wrapper">
+        <div class="login-form">
+          <h1>下载训练平台</h1>
+          <div class="input-item">
+            <div class="input-item">
+              <img src="/src/assets/win.png" alt="windows7/10">
+            </div>
+          </div>
+          <div class="input-item">Windows 7/10</div>
+          <button  class="login-btn" onclick='location.href=("/download")'>
+            <span>立即下载</span>
+          </button>
+          <button  class="login-btn" onclick='location.href=("/hello")'>
+            <span>开始训练</span>
+          </button>
+        </div>
+        <div class="divider">
+          <span class="line"></span>
+          <span class="divider-text">问题咨询</span>
+          <span class="line"></span>
+        </div>
+        <div class="other-login-wrapper">
+          <div class="other-login-item">
+            <img src="/src/assets/QQ.png" title="2097871434" alt="联系方式">
+          </div>
+          <div class="other-login-item">
+            <img src="/src/assets/WeChat.png" title="暂无" alt="登录方式">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style>
+.box {
+  //width: 80vw;
+  //height: 80vh;
+  background-color: white;
+}
+
+.box .content .login-wrapper h1 {
+  text-align: center;
+}
+
+.box .content .login-wrapper .login-form .form-item {
+  margin: 20px 0;
+}
+
+.box .content .login-wrapper .login-form .form-item span {
+  display: block;
+  margin: 0px 20px;
+  font-weight: 100;
+}
+
+.box .content .login-wrapper .login-form .form-item .input-item {
+  width: 100%;
+  border-radius: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.box .content .login-wrapper .login-form .form-item .input-item:focus {
+  outline: none;
+}
+
+.box .content .login-wrapper .login-form .login-btn {
+  width: 100%;
+  border-radius: 40px;
+  color: #fff;
+  border: 0;
+  font-weight: 100;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.box .content .login-wrapper .divider {
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .content .login-wrapper .divider span:nth-child(1) {
+  flex: 1;
+}
+
+.box .content .login-wrapper .divider span:nth-child(3) {
+  flex: 1;
+}
+
+.box .content .login-wrapper .divider .line {
+  display: inline-block;
+  max-width: 30%;
+  width: 30%;
+}
+
+.box .content .login-wrapper .divider .divider-text {
+  vertical-align: middle;
+  margin: 0px 20px;
+  line-height: 0px;
+  display: inline-block;
+  width: 100px;
+}
+
+.box .content .login-wrapper .other-login-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .content .login-wrapper .other-login-item {
+  border: 1px solid rgb(214, 222, 228);
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+@media (min-width: 767px) {
+  .box {
+    margin-top: 50px;
+    margin-bottom: 0;
+    //margin-left: 30px;
+    //width: 70vw;
+    //height: 90vh;
+    background-size: 90% 100%;
+    position: absolute;
+    right: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background: #fff url("src/assets/login_two.jpg") no-repeat;
+  }
+
+  .box .content {
+    width: 25vw;
+    position: absolute;
+    margin-left: 30px;
+    right: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .box .content .login-wrapper h1 {
+    text-align: center;
+    font-size: 45px;
+    color: rgb(81, 100, 115);
+    margin-bottom: 40px;
+  }
+
+  .box .content .login-wrapper .login-form {
+    margin: 10px 0;
+  }
+
+  .box .content .login-wrapper .login-form .form-item span {
+    color: rgb(81, 100, 115);
+  }
+
+  .box .content .login-wrapper .login-form .form-item .input-item {
+    height: 60px;
+    border: 1px solid rgb(214, 222, 228);
+  }
+
+  .box .content .login-wrapper .login-form .login-btn {
+    height: 50px;
+    background-color: rgb(59, 72, 89);
+    font-size: 20px;
+  }
+
+  .box .content .login-wrapper .divider .line {
+    border-bottom: 1px solid rgb(214, 222, 228);
+  }
+
+  .box .content .login-wrapper .other-login-item {
+    border-radius: 20px;
+  }
+
+  .box .content .login-wrapper .other-login-item img {
+    width: 40px;
+    height: 40px;
+  }
+}
+</style>
