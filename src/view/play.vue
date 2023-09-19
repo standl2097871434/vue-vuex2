@@ -1,0 +1,43 @@
+<script setup>
+
+</script>
+
+<template>
+  <div id="intro" class="tag-box tag-box-v1">
+    <div class="headline">
+      <p style="text-indent: 2em;">
+        本训练是刺激训练。训练过程中请患者集中注意力观看小兔子跳舞的动作，跟着歌曲一起摇摆吧。本训练是观看类训练，无需进行操作。</p>
+    </div>
+    <el-alert
+        title="success alert"
+        type="success"
+        description="more text description"
+        show-icon>
+    </el-alert>
+
+    <div class="headline">
+      <div>
+        <h3 class="heading-sm">注意</h3>
+      </div>
+      <span id="train-notice">此训练建议训练时间为5分钟，远视性弱视孩子可适当延长时间。</span>
+    </div>
+  </div>
+  <div class="wrapper">
+    <nav>
+      <h3>ST111-281</h3>
+      <ul id="navigation">
+        <li>
+          <a>训练说明</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="gameWindow">
+      <iframe id="game"
+              src="/gam.swf"></iframe>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+
+</style>
